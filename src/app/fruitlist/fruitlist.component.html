@@ -1,7 +1,6 @@
 <div class="fruitlist_content">
     @for(item of fruitlist; track item.name){
 
-
     <section class="singleFruitBox">
         <div>
             <img src="./assets/img/fruits/{{item.img}}" alt="" srcset="">
@@ -16,7 +15,7 @@
                      größer ist als der count ... dementsprechend wird dann ein voller, halber oder leerer Stern angezeigt-->
                     @for(count of [1,2,3,4,5]; track fruitlist) {
 
-                        @if(item.stars >= count) {
+                        @if (item.stars >= count) {
                             <img src="./assets/img/stars/star.svg" alt="" srcset="">
                         } @else if (item.stars >= count - 0.5) {
                             <img src="./assets/img/stars/star-half.svg" alt="" srcset="">
@@ -43,7 +42,6 @@
             </div>
         </div>
     </section>
-
-
     }
+
 </div>
