@@ -10,6 +10,9 @@ import { CommonModule } from '@angular/common';
 })
 export class FruitlistComponent {
 
+  fontColorGood = 'green';
+  fontColorBad = 'red';
+
   fruitlist = [
     {
       name: "Apfel",
